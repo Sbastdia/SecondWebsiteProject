@@ -26,6 +26,10 @@ h2{
     background-color: rgb(246, 243, 243);
 }
 
+.audios{
+    margin-top: 10px;
+}
+
 .parteizq{
     width: 95%;
     background: rgba(229, 138, 138, 0.478);
@@ -139,6 +143,10 @@ figure{
     text-align: center;
 }
 
+#quizlabel{
+    display: block;
+}
+
 footer{
     text-align: center;
     height: 180px;
@@ -224,6 +232,10 @@ footer{
     .videocontemporaneo{
         width: 400px;
         height: 230px;
+    }
+
+    footer{
+        margin-top: 20px;
     }
 
 }

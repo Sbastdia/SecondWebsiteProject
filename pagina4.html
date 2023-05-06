@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>QUIZ!</title>
+        <!--Aquí pongo el enlace a mi hoja de estilos-->
+        <link rel="stylesheet" href="./style.css" />
+        <meta charset="utf-8" />
+        <!--Para la versión móvil-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+        <!--Primero quiero que me salgan arriba los enlaces para poder ir por todas las páginas web-->
+        <a href="index.html">Inicio</a>
+        <a href="pagina1.html">Flamenco</a>
+        <a href="pagina2.html">Ballet</a>
+        <a href="pagina3.html">Contemporáneo</a>
+        <div class="audios">
+            <button id="pauseButton">Pausar audio</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+        </div>
+        <!--Aquí pongo el título de la página-->
+        <h1>QUIZ!</h1>
+        <audio id="audio" src="quiz.mp3"></audio>
+
+        <form id="quiz">
+            <p>¿En qué país se originó el flamenco?</p>
+            <label id="quizlabel"><input type="radio" name="q1" value="a">A. México</label>
+            <label id="quizlabel"><input type="radio" name="q1" value="b">B. España</label>
+            <label id="quizlabel"><input type="radio" name="q1" value="c">C. Brasil</label>
+
+            <p>¿Qué estilo de danza crees que se caracteriza por movimientos fluidos y suaves?</p>
+            <label id="quizlabel"><input type="radio" name="q2" value="a">A. Ballet</label>
+            <label id="quizlabel"><input type="radio" name="q2" value="b">B. Hip hop</label>
+            <label id="quizlabel"><input type="radio" name="q2" value="c">C. Contemporáneo</label>
+
+            <p>¿Qué estilo de danza crees que se caracteriza por movimientos acrobáticos y giros rápidos?</p>
+            <label id="quizlabel"><input type="radio" name="q3" value="a">A. Ballet</label>
+            <label id="quizlabel"><input type="radio" name="q3" value="b">B. Hip hop</label>
+            <label id="quizlabel"><input type="radio" name="q3" value="c">C. Contemporáneo</label>
+
+            <p>¿En qué país crees que se originó el breakdance?</p>
+            <label id="quizlabel"><input type="radio" name="q4" value="a">A. Reino Unido</label>
+            <label id="quizlabel"><input type="radio" name="q4" value="b">B. Francia</label>
+            <label id="quizlabel"><input type="radio" name="q4" value="c">C. Estados Unidos</label>
+
+            <br>
+            <input type="submit" value="Enviar respuestas">
+        </form>
+
+        <div id="results"></div>
+
+        <!--Aquí va el footer-->
+        <footer>
+            <!--Creo una clase de <div> para poder colocar bien el logo de Ironhack y el texto al lado del logo de Bailar-->
+            <div class="parteabajo">
+                <img class="logo1" src="./imagenes/logoironhack.png" alt="Logo de Ironhack" title="LogoIronhack">
+                <p>
+                    © 2023 - Todos los derechos reservados<br><br>
+                    Contáctanos al <span class="negrita">123-456-789</span> <br> o envía un correo a <span class="negrita">ayuda@miempresa.com</span>
+                </p>
+                <img class="logo2" src="./imagenes/logobailar.png" alt="Logo de Bailar" title="LogoBailar">
+            </div>
+            <!--Vuelvo a poner los links de las páginas webs para poder ir a la siguiente o a la que el usuario quiera-->
+            <a href="index.html">Inicio</a>
+            <a href="pagina1.html">Flamenco</a>
+            <a href="pagina2.html">Ballet</a>
+            <a href="pagina3.html">Contemporáneo</a>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

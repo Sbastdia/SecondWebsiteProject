@@ -1,38 +1,57 @@
-var audio1 = document.getElementById("audioFlamenco");
-audio1.play();
+var audios = document.getElementById("audio"); // Actualizar con el ID correcto para cada página
+var pauseButton = document.getElementById("pauseButton");
+var volumeSlider = document.getElementById("volumeSlider");
 
-// Agrega un evento clic al botón para pausar el audio
-document.getElementById("pauseButton").addEventListener("click", function() {
-    audio1.pause();
+// Reproducir el audio al cargar la página
+audios.play();
+
+// Pausar el audio cuando se hace clic en el botón de pausa
+pauseButton.addEventListener("click", function() {
+    if (audios.paused) {
+    audios.play();
+    pauseButton.innerHTML = "Pausar audio";
+    } else {
+    audios.pause();
+    pauseButton.innerHTML = "Reproducir audio";
+    }
 });
 
-// Agrega un evento de cambio al deslizador de volumen para cambiar el volumen del audio
-document.getElementById("volumeSlider").addEventListener("change", function() {
-    audio1.volume = this.value;
+// Cambiar el volumen del audio cuando se mueve el control deslizante
+volumeSlider.addEventListener("input", function() {
+    audios.volume = this.value;
 });
 
-var audio2 = document.getElementById("audioBallet");
-audio2.play();
 
-// Agrega un evento clic al botón para pausar el audio
-document.getElementById("pauseButton").addEventListener("click", function() {
-    audio2.pause();
-});
+var quizForm = document.getElementById("quiz");
+var resultsDiv = document.getElementById("results");
+var score = 0;
 
-// Agrega un evento de cambio al deslizador de volumen para cambiar el volumen del audio
-document.getElementById("volumeSlider").addEventListener("change", function() {
-    audio2.volume = this.value;
-});
+quizForm.addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita que la página se recargue al enviar el formulario
 
-var audio3 = document.getElementById("audioContemporaneo");
-audio3.play();
+    // Obtén las respuestas seleccionadas por el usuario
+    var q1Answer = quizForm.elements.q1.value;
+    var q2Answer = quizForm.elements.q2.value;
+    var q3Answer = quizForm.elements.q3.value;
+    var q4Answer = quizForm.elements.q4.value;
 
-// Agrega un evento clic al botón para pausar el audio
-document.getElementById("pauseButton").addEventListener("click", function() {
-    audio3.pause();
-});
+    // Compara las respuestas seleccionadas con las respuestas correctas
+    if (q1Answer === "b") {
+        score += 1;
+    }
+    if (q2Answer === "a") {
+        score += 1;
+    }
+    if (q3Answer === "b") {
+        score += 1;
+    }
+    if (q4Answer === "c") {
+        score += 1;
+    }
 
-// Agrega un evento de cambio al deslizador de volumen para cambiar el volumen del audio
-document.getElementById("volumeSlider").addEventListener("change", function() {
-    audio3.volume = this.value;
+    if (score === 4) {
+        resultsDiv.innerHTML = "¡Felicidades! ¡Has obtenido la puntuación máxima!";
+    } else {
+        resultsDiv.innerHTML = `¡Has obtenido una puntuación de ${score} de 4!`;
+    }
 });
