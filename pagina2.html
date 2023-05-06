@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Ballet</title>
+        <!--Aquí pongo el enlace a mi hoja de estilos-->
+        <link rel="stylesheet" href="./style.css" />
+        <meta charset="utf-8" />
+        <!--Para la versión móvil-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+        <!--Primero quiero que me salgan arriba los enlaces para poder ir por todas las páginas web-->
+        <a href="index.html">Inicio</a>
+        <a href="pagina1.html">Flamenco</a>
+        <a href="pagina3.html">Contemporáneo</a>
+        <!--Aquí pongo el título de la página-->
+        <h1>Ballet</h1>
+        <!--Creo una clase padre para poder colocar bien las 2 columnas que creo posteriormente-->
+        <div class="padre">
+            <!--Creo la primera columna para el menú (índice)-->
+            <div class="columna1">
+                <header>
+                    <div class="parteizq">
+                        <h3>INDICE</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#Def">Definición</a></li>
+                                <li><a href="#Hist">Historia</a></li>
+                                <li><a href="#Tipos">Tipos de danza clásica</a></li>
+                                <li><a href="#rol">Rol del bailarín</a></li>
+                                <li><a href="#expo">Exponentes de la danza clásica</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+
+            <!--Creo la segunda columna para el cuerpo de la página-->
+            <div class="columna2">
+                <div class="cuerpo">
+                    <!--Aquí pongo un vídeo de youtube para introducir el tema de la página-->
+                    <iframe class="videoballet" src="https://www.youtube.com/embed/8CXQxSriwbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <!--Aquí va la primera sección de la página-->
+                    <section>
+                        <!--Aquí pongo el título de la sección-->
+                        <h2 id="Def">Definición</h2>
+                        <!--Aquí pongo el texto de la sección-->
+                        <p>
+                            El <span class="negrita">ballet clásico</span> o <span class="negrita">danza clásica</span> es una forma de danza cuyos movimientos se basan en el control total y absoluto del cuerpo, el cual se debe enseñar desde temprana edad. Se recomienda iniciar los estudios de esta danza clásica a los seis o siete años, ya que el ballet es una disciplina que requiere concentración y capacidad para el esfuerzo como actitud y forma de vida.<br><br>
+                            A diferencia de otras danzas, en el ballet cada paso está codificado. Participan invariablemente las manos, brazos, tronco, cabeza, pies, rodillas, todo el cuerpo en una conjunción simultánea de dinámica muscular y mental que debe expresarse en total armonía de movimientos.<br><br>
+                            También se utiliza el término ballet para designar una pieza musical compuesta, a propósito, para ser interpretada por medio de la danza.
+                        </p>
+                    </section>
+
+                    <!--Aquí va la segunda sección de la página-->
+                    <section>
+                        <!--Aquí pongo el título de la sección-->
+                        <h2 id="Hist">Historia</h2>
+                        <!--Aquí pongo el texto de la sección-->
+                        <p>
+                            Esta danza surgió durante el <span class="negrita">Renacimiento</span>, cuando las bodas y los eventos aristocráticos eran celebrados con bailarines de la corte que mostraban sus destrezas. Con el paso del tiempo, los movimientos y los pasos fueron perfeccionándose.<br><br>
+                            Además de ello también hay que destacar que fue en Francia y concretamente durante la etapa del reinado de Luis XIV cuando se llevó a cabo la profesionalización de la danza clásica. Así unos cuantos años después, en la segunda mitad del siglo XVII, fue cuando abrió sus puertas la que está considerada como la primera escuela de danza clásica. Nos estamos refiriendo a la <span class="negrita">Académie Royale de la danse</span>.<br>
+                        </p>
+                        <!--Aquí pongo una imagen de la sección y un texto dentro de una clase <div> para poder manejarlos y colocarlos-->
+                        <div class="parte2">
+                            <img class="img4" src="https://definicion.de/wp-content/uploads/2009/07/danza-clasica.jpg" alt="Ballet" title="Ballet">
+                            <p>
+                                En 1725 P. Rameau con su Traité Maître a danser perfeccionó toda la técnica hasta entonces planteada.<br><br>
+                                Fueron de vital importancia de cara al nacimiento del Ballet Romántico las reformas actuadas por G. Magri con su Trattato teorico-practico di Ballo en 1779 proporcionando un repertorio intacto de figuras y por J. G. Noverre con su tratado Lettre sur le ballets et les arts d’imitation donde da vida al Ballet d’action el ballet pantomima. En 1713 se creó la segunda Académie Royale lo que hoy conocemos como la Opera de París.<br><br>
+                                Toda esta reforma fue experimentada y puesta en práctica por F. W. Hilferding en 1735 al regresar a su ciudad natal Viena fue nombrado Maestro de Ballet y en 1740 emprendió la tarea de introducir el Realismo en el propio Ballet.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!--Aquí va la tercera sección de la página-->
+                    <section>
+                        <!--Aquí pongo el título de la sección-->
+                        <h2 id="Tipos">Tipos de danza clásica</h2>
+                        <!--Aquí pongo el texto de la sección-->
+                        <p>
+                            El ballet puede constituir una <span class="negrita">pieza autónoma</span> o ser intercalado dentro de una <span class="negrita">ópera</span> o de una <span class="negrita">obra de teatro</span>. Entre los distintos tipos de danzas clásicas pueden mencionarse al <span class="negrita">ballet cortesano</span>, el <span class="negrita">ballet romántico</span> y el <span class="negrita">ballet de acción</span>.
+                        </p>
+                        <!--Aquí pongo una lista ordenada para poner los tipos de danza clásica-->
+                        <ul>
+                            <li>
+                                <!--Aquí pongo el título del primer tipo-->
+                                <h4>Ballet cortesano</h4>
+                                <p>
+                                    El ballet cortesano es aquel que nace en Francia a finales del siglo XVI y, como su propio nombre indica, surge en el entorno de lo que es la corte. Bailarines profesionales, cortesanos y también los propios miembros de la familia real son los que llevan a cabo dicha danza clásica. Entre las obras más características de este tipo de danza se encuentra, por ejemplo, la que lleva por título “Ballet des Polonais”.
+                                </p>
+                            </li>
+                            <li>
+                                <!--Aquí pongo el título del segundo tipo-->
+                                <h4>Ballet romántico</h4>
+                                <p>
+                                    El ballet romántico, por su parte, podemos establecer que es aquel que nace en los primeros compases del siglo XIX y estuvo en vigor hasta el año 1850. Entre las obras más características del mismo se halla “La Sílfide”.
+                                </p>
+                            </li>
+                            <li>
+                                <!--Aquí pongo el título del tercer tipo-->
+                                <h4>Ballet de acción</h4>
+                                <p>
+                                    El ballet de acción nació en el siglo XVIII y se identifica fundamentalmente por el hecho de que mezcla pantomima y danza.
+                                </p>
+                            </li>
+                        </ul>
+                        <br>
+                        <!--Aquí pongo una imagen de la sección y un texto dentro de una clase <div> para poder manejarlos y colocarlos-->
+                        <div class="imagen5">
+                            <img class="img5" src="https://definicion.de/wp-content/uploads/2009/07/ballet.jpg" alt="Ballet" title="Ballet">
+                            <p>A la danza clásica también se la conoce como ballet.</p>
+                        </div>
+                    </section>
+
+                    <!--Aquí va la cuarta sección de la página-->
+                    <section>
+                        <!--Aquí pongo el título de la sección-->
+                        <h2 id="rol">Rol del bailarín</h2>
+                        <!--Aquí pongo el texto de la sección-->
+                        <p>
+                            La danza clásica exige una importante concentración del bailarín, quien debe ejecutar movimientos corporales con mucha precisión y coordinación. El entrenamiento es imprescindible ya que muchas de las formas del ballet requieren de elasticidad y fortaleza.<br><br>
+                            El vestuario ocupa un rol fundamental en la danza clásica. Los bailarines utilizan ropa adherida al cuerpo para que sus movimientos puedan apreciarse con mayor facilidad. Se conoce como puntas de ballet a unas zapatillas especiales con puntas de yeso o cartón: esto permite que la bailarina pueda sostener todo el peso de cuerpo con la punta de los pies.<br><br>
+                            Esta práctica, de todas maneras, es riesgosa ya que se necesita una gran fuerza en las piernas y puede causar desgarros o hasta fracturas. La utilización de las puntas de ballet, por otra parte, puede ser muy dolorosa.
+                        </p>
+                    </section>
+
+                    <!--Aquí va la quinta sección de la página-->
+                    <section>
+                        <!--Aquí pongo el título de la sección-->
+                        <h2 id="expo">Exponentes de la danza clásica</h2>
+                        <!--Aquí pongo el texto de la sección-->
+                        <p>
+                            Además de todo lo expuesto no podemos pasar por alto el citar a algunos de los mejores representantes de la danza clásica de todos los tiempos.<br>
+                            En este caso, tendríamos que hacer referencia a Vaslav Nijinski, Anna Pavlova, Rudolf Nurejev, Mikhail Baryshnikov, Julio Bocca, Natalia Makarova…
+                        </p>
+                        <br>
+                    </section>
+
+                    <!--Aquí va la sexta sección de la página que vuelve a ser la misma sorpresa que en la de Flamenco-->
+                    <section>
+                        <div class="sorpresa">
+                            <p>
+                                <span class="negrita">PULSA SOBRE LA FOTO Y DISFRUTA!!</span>
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=ndVhlx77KZY"><img src="http://photos.demandstudios.com/getty/article/142/150/78456607.jpg" alt="youtube" style="width: 50%; height: 50%;"/></a>
+                        </div>
+                    </section>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+        <!--Aquí va el footer de la página-->
+        <footer>
+            <!--Creo una clase de <div> para poder colocar bien el logo de Ironhack y el texto al lado del logo de Bailar-->
+            <div class="parteabajo">
+                <img class="logo1" src="./imagenes/logoironhack.png" alt="Logo de Ironhack" title="LogoIronhack">
+                <p>
+                    © 2023 - Todos los derechos reservados<br><br>
+                    Contáctanos al <span class="negrita">123-456-789</span> <br> o envía un correo a <span class="negrita">ayuda@miempresa.com</span>
+                </p>
+                <img class="logo2" src="./imagenes/logobailar.png" alt="Logo de Bailar" title="LogoBailar">
+            </div>
+            <!--Vuelvo a poner los links de las páginas webs para poder ir a la siguiente o a la que el usuario quiera-->
+            <a href="index.html">Inicio</a>
+            <a href="pagina1.html">Flamenco</a>
+            <a href="pagina3.html">Contemporáneo</a>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Flamenco</title>
+        <meta charset="utf-8" />
+        <!--Aquí pongo el enlace a mi hoja de estilos-->
+        <link rel="stylesheet" href="./style.css" />
+        <!--Para la versión móvil-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+        <!--Primero quiero que me salgan arriba los enlaces para poder ir por todas las páginas web-->
+        <a href="index.html">Inicio</a>
+        <a href="pagina2.html">Ballet</a>
+        <a href="pagina3.html">Contemporáneo</a>
+        <!--Aquí pongo el título de la página-->
+        <h1>Flamenco</h1>
+        <audio id="audioFlamenco" src="flamenco.mp3"></audio>
+        <!--Creo una clase padre para poder colocar bien las 2 columnas que creo posteriormente-->
+        <div class="padre">
+            <!--Creo la primera columna para el menú (índice)-->
+            <div class="columna1">
+                <header>
+                    <div class="parteizq">
+                        <h3>INDICE</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#Def">Definición</a></li>
+                                <li><a href="#Evol">Evolución</a></li>
+                                <li><a href="#Tipos">Tipos de baile flamenco</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+
+            <!--Creo la segunda columna para el contenido de la página-->
+            <div class="columna2">
+                <div class="cuerpo">
+                    <!--Aquí pongo un vídeo de youtube para introducir el tema de la página-->
+                    <iframe class="videoflamenco" src="https://www.youtube.com/embed/bbug6ZT5r-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <!--Aquí va la primera sección de la página-->
+                    <section>
+                        <!--Aquí pongo el título de la sección-->
+                        <h2 id="Def">Definición</h2>
+                        <!--Aquí pongo el texto de la sección-->
+                        <p>El baile <span class="negrita">flamenco</span> es un arte que se desarrolló en <span class="negrita">Andalucía, España</span>, y que se caracteriza por su
+                            expresividad y su fuerza. El baile flamenco es una forma de expresión que se ha transmitido de
+                            generación en generación, y que se ha convertido en un símbolo de la cultura española.
+                        </p>
+                    </section>
+
+                    <!--Aquí va la segunda sección de la página-->
+                    <section>
+                        <!--Aquí pongo el título de la sección-->
+                        <h2 id="Evol">Evolución</h2>
+                        <!--Aquí pongo el texto de la sección-->
+                        <p>
+                            El baile y la música actual es el resultado de siglos de <span class="negrita">evolución, integración y unificación</span>
+                            de elementos de diversas culturas. Con el desarrollo de la música flamenca surgió también el del
+                            baile flamenco, que apareció por primera vez, de modo reconocible como una danza estructurada, en el siglo XVIII.<br>
+                            Al principio, la atención del flamenco se centraba en la voz del cantante, pero poco a poco en las actuaciones que se
+                            hacían en los  antiguos café cantantes, la pasión que derrochaban los bailaores sobre el escenario fue llamando la atención
+                            del público y el baile comenzó a robarle protagonismo al cante. En un show flamenco, el papel de la bailaora o bailaor flamenco
+                            es el de interpretar físicamente la letra de la canción, con movimientos suaves y elegantes que contrastan, en ocasiones,
+                            con intensos <span class="negrita">'taconeos'</span> o giros. <br>
+                            Los dúos, llevados a cabo generalmente por un hombre y una mujer, suelen ser también bailes
+                            muy intensos y con altas dosis de emotividad, ya que los bailaores mantienen una especie de competición en la que entran en
+                            juego la <span class="negrita">pasión, tensión y emoción</span>. En un espectáculo, tras los primeros compases de música y voz, cuando se inicia el baile,
+                            el artista interpreta el palo en cuestión con todo su cuerpo: <span class="negrita">brazos, piernas</span> e incluso con la <span class="negrita">expresión de su cara</span>.
+                        </p>
+                        <!--Aquí pongo una imagen de la sección dentro de una clase para poder manejarla-->
+                        <div class="imagen3">
+                            <img class="img3" src="https://thumbs.dreamstime.com/b/evoluci%C3%B3n-del-flamenco-106160503.jpg" alt="evolucion del flamenco" title="Evolución del flamenco">
+                        </div>
+                    </section>
+
+                    <!--Aquí va la tercera sección de la página-->
+                    <section>
+                        <!--Aquí pongo el título de la sección-->
+                        <h2 id="Tipos">Tipos de baile flamenco</h2>
+                        <!--Aquí pongo el texto de la sección-->
+                        <p>
+                            La <span class="negrita">estructura</span> de la pieza, los <span class="negrita">movimientos</span> y la <span class="negrita">intensidad</span> de la interpretación depende del tipo de
+                            baile flamenco que se realice. Aunque más que hablar de 'tipo de bailes', lo más correcto es hacer
+                            referencia a <span class="negrita">palos flamencos</span>, de los que hay más de 50 diferentes, una muestra de la riqueza y
+                            variedad que posee este arte de raíces andaluzas.
+                            Entre la variedad de bailes flamencos, los más populares y conocidos son los siguientes:
+                        </p>
+                        <!--Aquí pongo una lista ordenada de los tipos de baile-->
+                        <ul class="lista">
+                            <li>
+                                <span class="negrita">Soleá</span>: es uno de los bailes más ejecutados por los artistas y por su tipo de movimientos se adapta mejor a las mujeres. Es un palo triste, que se interpreta con movimientos de brazos, ondulaciones de cadera y quiebros de cintura. Las letras hablan de penas, de pérdidas, de amor, de muchos otros temas pero siempre con sentimiento profundo.
+                            </li>
+
+                            <li>
+                                <span class="negrita">Bulerías</span>: es un cante festero por excelencia y se usa como culmen de otros bailes (como la soleá o alegrías, por ejemplo). También suele ser el palo para lo que en flamenco se denomina 'fin de fiesta', el bis tras un espectáculo. Es el más alegre y divertido de todos los bailes y se distingue por su ritmo rápido, sin duda, hecho para bailar.
+                            </li>
+
+                            <li>
+                                <span class="negrita">Alegrías</span>: con origen en Cádiz, es el baile flamenco más antiguo. Tanto es así, que gran parte del resto de palos flamencos toman como base las alegrías para componer su coreografía. Se caracteriza por la musicalidad los tonos de la guitarra. El baile por alegrías a veces comienza por una entrada de cante antes de la letra; tras la letra (suelen ser dos o tres, pero lo decide el bailaor/a), viene el silencio y después, la castellana, a la que sigue una escobilla de pies o zapateado. Las alegrías se suelen terminar por bulerías, casi siempre bulerías de Cádiz o de Jerez.
+                            </li>
+
+                            <li>
+                                <span class="negrita">Farruca</span>: con origen en Galicia, es un palo que tiene mucha dificultad y exige un nivel alto de ejecución. Es más un baile de hombre que de mujeres, hasta el punto que cuando lo interpreta una mujer ésta lo baila con pantalones, a fin de resaltar el zapateado característico, acompañándose de pitos.
+                            </li>
+
+                            <li>
+                                <span class="negrita">Sevillanas</span>: Es quizá el palo menos flamenco (a caballo entre el flamenco y el folclore andaluz), pero es con diferencia el más conocido y el que más personas bailan. Se compone de 4 sevillanas con sus letras, que tienen siempre una misma duración y una misma estructura de baile: paseíllos, pasadas, careos y remate.
+                            </li>
+
+                        </ul>
+                    </section>
+
+                    <!--Aquí va la cuarta sección de la página que es una sorpresa-->
+                    <!--ATENCIÓN SPOILER: Cuando pulsas la foto te lleva a un vídeo precioso...-->
+                    <section>
+                        <div class="sorpresa">
+                            <p>
+                                <span class="negrita">PULSA SOBRE LA FOTO Y DISFRUTA!!</span>
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=H4by8nAlUdM"><img src="https://elflamencoensevilla.com/wp-content/uploads/2015/03/TablaoFlamencoElPalacioAndaluz_92A5236.jpg" alt="youtube" style="width: 50%; height: 50%;"/></a>
+                        </div>
+                    </section>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+        <!--Aquí va el footer-->
+        <footer>
+            <!--Creo una clase de <div> para poder colocar bien el logo de Ironhack y el texto al lado del logo de Bailar-->
+            <div class="parteabajo">
+                <img class="logo1" src="./imagenes/logoironhack.png" alt="Logo de Ironhack" title="LogoIronhack">
+                <p>
+                    © 2023 - Todos los derechos reservados<br><br>
+                    Contáctanos al <span class="negrita">123-456-789</span> <br> o envía un correo a <span class="negrita">ayuda@miempresa.com</span>
+                </p>
+                <img class="logo2" src="./imagenes/logobailar.png" alt="Logo de Bailar" title="LogoBailar">
+            </div>
+            <!--Vuelvo a poner los links de las páginas webs para poder ir a la siguiente o a la que el usuario quiera-->
+            <a href="index.html">Inicio</a>
+            <a href="pagina2.html">Ballet</a>
+            <a href="pagina3.html">Contemporáneo</a>
+        </footer>
+
+        <script src="pagina1.js"></script>
+    </body>
+
+</html>
