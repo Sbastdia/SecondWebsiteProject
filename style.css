@@ -4,6 +4,7 @@ body{
     background: rgba(207, 195, 216, 0.478);
     font-family: 'Roboto', sans-serif;
     color: black;
+    padding: 10px;
 }
 
 h1{
@@ -42,6 +43,31 @@ h3{
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
+}
+
+.item {
+    margin-bottom: 20px;
+    border: 2px solid #882b03;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pregunta {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.respuesta {
+    display: none;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.respuesta.mostrar {
+    display: block;
 }
 
 .padre{
@@ -152,6 +178,7 @@ footer{
     height: 180px;
     padding: 10px;
     background-color: whitesmoke;
+    margin-top: 20px;
 }
 
 .logo1{
@@ -328,6 +355,7 @@ footer{
 
     footer{
         padding: 20px;
+        margin-top: 20px;
     }
 
     .logo1{

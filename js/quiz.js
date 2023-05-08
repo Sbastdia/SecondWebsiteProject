@@ -1,27 +1,3 @@
-var audios = document.getElementById("audio"); // Actualizar con el ID correcto para cada página
-var pauseButton = document.getElementById("pauseButton");
-var volumeSlider = document.getElementById("volumeSlider");
-
-// Reproducir el audio al cargar la página
-audios.play();
-
-// Pausar el audio cuando se hace clic en el botón de pausa
-pauseButton.addEventListener("click", function() {
-    if (audios.paused) {
-    audios.play();
-    pauseButton.innerHTML = "Pausar audio";
-    } else {
-    audios.pause();
-    pauseButton.innerHTML = "Reproducir audio";
-    }
-});
-
-// Cambiar el volumen del audio cuando se mueve el control deslizante
-volumeSlider.addEventListener("input", function() {
-    audios.volume = this.value;
-});
-
-
 var quizForm = document.getElementById("quiz");
 var resultsDiv = document.getElementById("results");
 var score = 0;
@@ -52,6 +28,11 @@ quizForm.addEventListener("submit", function(event) {
     if (score === 4) {
         resultsDiv.innerHTML = "¡Felicidades! ¡Has obtenido la puntuación máxima!";
     } else {
-        resultsDiv.innerHTML = `¡Has obtenido una puntuación de ${score} de 4!`;
+        resultsDiv.innerHTML = `¡Casi! Tu puntuación es: ${score} / 4`;
     }
 });
+
+resultsDiv.style.color = "purple";
+resultsDiv.style.fontWeight = "bold";
+resultsDiv.style.fontSize = "20px";
+resultsDiv.style.textAlign = "center";
