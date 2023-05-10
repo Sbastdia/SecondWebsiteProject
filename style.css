@@ -95,7 +95,7 @@ figure{
     flex-direction: column;
 }
 
-.img1{
+#img1{
     margin-left: 50px;
     width: 60%;
 }
@@ -221,7 +221,7 @@ footer{
         flex-direction: row;
     }
 
-    .img1{
+    #img1{
         width: 70%;
     }
 
@@ -310,7 +310,7 @@ footer{
         flex-direction: row;
     }
 
-    .img1{
+    #img1{
         width: 80%;
     }
 
@@ -355,7 +355,7 @@ footer{
 
     footer{
         padding: 20px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .logo1{
