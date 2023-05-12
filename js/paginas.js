@@ -1,22 +1,23 @@
-var audios = document.getElementById("audio"); // Actualizar con el ID correcto para cada página
-var pauseButton = document.getElementById("pauseButton");
-var volumeSlider = document.getElementById("volumeSlider");
+//Voy a añadir un audio a algunas páginas
+var audios = document.getElementById("audio"); //Se va actualizando con el id correcto para cada página
+var pauseButton = document.getElementById("pauseButton"); //Selecciono el id para usarlo en cada página
+var volumeSlider = document.getElementById("volumeSlider"); //Selecciono el id para usarlo en cada página
 
-// Reproducir el audio al cargar la página
+//Se reproduce el audio al cargar la página
 audios.play();
 
-// Pausar el audio cuando se hace clic en el botón de pausa
+//Añadimos lo siguiente para pausar el audio cuando se hace click en el botón de "Pausar audio"
 pauseButton.addEventListener("click", function() {
     if (audios.paused) {
     audios.play();
-    pauseButton.innerHTML = "Pausar audio";
+    pauseButton.innerHTML = "Pausar audio"; //Cambia el texto del botón
     } else {
     audios.pause();
-    pauseButton.innerHTML = "Reproducir audio";
+    pauseButton.innerHTML = "Reproducir audio"; //Cambia el texto del botón
     }
 });
 
-// Cambiar el volumen del audio cuando se mueve el control deslizante
+//Para cambiar el volumen del audio cuando se mueve el control deslizante
 volumeSlider.addEventListener("input", function() {
     audios.volume = this.value;
 });

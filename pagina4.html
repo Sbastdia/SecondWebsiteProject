@@ -22,10 +22,16 @@
         </div>
         <!--Aquí pongo el título de la página-->
         <h1>QUIZ!</h1>
+        <!--Añado audio para que sea más divertido-->
         <audio id="audio" src="quiz.mp3"></audio>
 
+        <!--Hago un quiz que luego conectaré a un archivo .js para que al hacer click, el usuario obtenga la puntuación-->
         <form id="quiz">
             <p>¿En qué país se originó el flamenco?</p>
+            <!--input type="radio" lo utilizo para crear botones de opción o casillas de verificación-->
+            <!--name="q1" lo utilizo para agrupar los botones de opción-->
+            <!--value="a" lo utilizo para darle un valor a cada botón de opción-->
+            <!--Cada botón de opción debe estar asociado a una etiqueta label que describa el significado de la opción-->
             <label id="quizlabel"><input type="radio" name="q1" value="a">A. México</label>
             <label id="quizlabel"><input type="radio" name="q1" value="b">B. España</label>
             <label id="quizlabel"><input type="radio" name="q1" value="c">C. Brasil</label>
@@ -46,12 +52,14 @@
             <label id="quizlabel"><input type="radio" name="q4" value="c">C. Estados Unidos</label>
 
             <br>
+            <!--Aquí pongo el botón para enviar las respuestas-->
             <input type="submit" value="Enviar respuestas">
 
         </form>
 
         <br>
 
+        <!--Esto lo añado porque lo necesitaré para el archivo .js (quiz.js), donde saldrá la puntuación-->
         <div id="results"></div>
 
         <!--Aquí va el footer-->
@@ -72,6 +80,7 @@
             <a href="pagina3.html">Contemporáneo</a>
         </footer>
 
+        <!--Aquí los archivos de javascript asociados-->
         <script src="./js/paginas.js"></script>
         <script src="./js/quiz.js"></script>
     </body>
