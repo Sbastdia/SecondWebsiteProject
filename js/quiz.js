@@ -1,18 +1,18 @@
 //Seleccionamos los elementos del DOM que necesitaremos
-var quizForm = document.getElementById("quiz");
-var resultsDiv = document.getElementById("results");
+let quizForm = document.getElementById("quiz");
+let resultsDiv = document.getElementById("results");
 //Inicializamos la puntuación del usuario
-var score = 0;
+let score = 0;
 
 //Agregamos un event listener para cuando el usuario envíe el formulario
 quizForm.addEventListener("submit", function(event) {
   event.preventDefault(); //Evita que la página se recargue al enviar el formulario
 
     //Obtenemos las respuestas seleccionadas por el usuario
-    var q1Answer = quizForm.elements.q1.value;
-    var q2Answer = quizForm.elements.q2.value;
-    var q3Answer = quizForm.elements.q3.value;
-    var q4Answer = quizForm.elements.q4.value;
+    let q1Answer = quizForm.elements.q1.value;
+    let q2Answer = quizForm.elements.q2.value;
+    let q3Answer = quizForm.elements.q3.value;
+    let q4Answer = quizForm.elements.q4.value;
 
     //Comparamos las respuestas seleccionadas con las respuestas correctas
     if (q1Answer === "b") {
